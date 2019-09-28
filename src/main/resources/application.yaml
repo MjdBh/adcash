@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: challenge
+  jackson:
+    serialization:
+      indent-output: true
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:file:./target/h2db/db/challenge;DB_CLOSE_DELAY=-1;
+    initialization-mode: always
+    username: challenge
+    password:
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+  h2:
+    console:
+      enabled: true
+  jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: H2
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate.id.new_generator_mappings: true
+      hibernate.connection.provider_disables_autocommit: true
+      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: false
+
+
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+    min-response-size: 1024
+
+application:
+   jwt:
+     secret: NWIyNjNjODFmOTU3NWJjNTI4YWQ0NzBkYzEzZWU1NjIzNWQzZjNlN2VkNTg4OGRiNTFiMzZiNjBjMzIxODQ3MWE2ZWZiZWExZDI2N2E5NjBhNWJlN2IzMjgxMjlmNDVlZWI2ZmUyYTA4MTRhYzY5MmE5Nzc3YjcxMDZjYWZjYWE=
+     validity: 86400
+

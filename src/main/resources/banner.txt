@@ -1,0 +1,6 @@
+
+  ${AnsiColor.BLUE}      \         |                       |
+  ${AnsiColor.BLUE}     _ \     _` |    _|    _` |  (_-<     \
+  ${AnsiColor.BLUE}   _/  _\  \__,_|  \__|  \__,_|  ___/  _| _|
+
+:: https://www.adcash.com ::${AnsiColor.BRIGHT_RED}
