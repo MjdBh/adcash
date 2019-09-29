@@ -29,7 +29,7 @@ import static org.hamcrest.Matchers.not;
  * Integration tests for the {@link UserJWTController} REST controller.
  */
 @SpringBootTest(classes = ChallengeApplication.class)
-public class UserJWTControllerIT {
+public class UserJWTControllerITest {
 
     @Autowired
     private TokenProvider tokenProvider;

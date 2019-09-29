@@ -39,7 +39,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * Integration tests for the {@link ProductResource} REST controller.
  */
 @SpringBootTest(classes = ChallengeApplication.class)
-public class ProductResourceIT {
+public class ProductResourceITest {
 
     private static final String DEFAULT_NAME = "AAAAAAAAAA";
     private static final String UPDATED_NAME = "BBBBBBBBBB";
