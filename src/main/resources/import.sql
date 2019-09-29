@@ -1,4 +1,4 @@
-INSERT INTO user (id,first_name,last_name,login,password_hash) VALUES  (1,'admin','admin','admin','$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC');
+INSERT INTO user (id,first_name,last_name,login,password_hash) VALUES  (1,'admin','admin','admin','$2a$10$/1VFtlrxzP.oifb2EJQxzOrwLxFZh9MYNHOUql7NiVqjYI90aYd86');
 INSERT INTO authority(name) VALUES  ('ROLE_ADMIN');
 INSERT INTO user_authority(user_id,authority_name) VALUES    (1,'ROLE_ADMIN');
 INSERT INTO product (id,name,identifier) VALUES     (1,'car','CAR'),    (2,'bus','BUS'),    (3,'bike','BIK');
